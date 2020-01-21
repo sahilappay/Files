@@ -15,7 +15,7 @@ public class Main {
      * @param args the command line arguments
      */
     public static void main(String[] args) throws Exception {
-        User user = new User("Sahil", "Appayev", 24);
+//        User user = new User("Sahil", "Appayev", 24);
 
 //        FilesIO.writeUsingFileWriter("\ntest2", true);
 //        FilesIO.readUsingFilereader();
@@ -27,6 +27,11 @@ public class Main {
 //        System.out.println(user.getName());
 //        System.out.println(user.getSurname());
 //        System.out.println(user.getAge());
+
+          byte [] bytes = FileUtil.readBytesNIO("C:\\Users\\Sahil\\Desktop\\test.jpg");
+          FileUtil.writeBytesNIO("C:\\Users\\Sahil\\Desktop\\test2.jpg", bytes);
+
+   
     }
 
 }
